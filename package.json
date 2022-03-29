@@ -1,0 +1,24 @@
+{
+  "name": "copy-to-file-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdanmanate-kion/copy-to-file-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdanmanate-kion/copy-to-file-action/issues"
+  },
+  "homepage": "https://github.com/bogdanmanate-kion/copy-to-file-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}

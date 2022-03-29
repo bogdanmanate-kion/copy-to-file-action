@@ -1,0 +1,15 @@
+name: 'Copy environment variable to file'
+description: 'Copy environment variable to file'
+inputs:
+  content:  # env var or secret
+    description: 'The content to write to the file'
+    required: true
+  filename:  # filename
+    description: 'Where to write the file'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
