@@ -12,7 +12,8 @@ This action will write environment variables/secret to a file.
 
 **Required** The filename you want to write to.
 
-
+## `work-directory`
+**Optional** The directory you want to write to. If not specified, the runner's temp ("RUNNER_TEMP") will  be used.
 
 ## Example usage
 

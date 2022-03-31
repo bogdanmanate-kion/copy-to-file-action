@@ -7,9 +7,9 @@ inputs:
   filename:  # filename
     description: 'Where to write the file'
     required: true
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  work-directory:
+    description: 'Directory where to write the file'
+    required: false
 runs:
   using: 'node16'
   main: 'dist/index.js'

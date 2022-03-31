@@ -5,10 +5,11 @@ const fs = require('fs');
 try {
     const content = core.getInput('content');
     const filename = core.getInput('filename');
-    console.log(`Saving content to file: ${filename}`);
+    const workDirectory = core.getInput('work-directory');
     const runnerTempDirectory = process.env['RUNNER_TEMP']; // Using process.env until the core libs are updated
-    const filePath = path.join(runnerTempDirectory, filename);
-    core.debug(`Writing contents to ${filePath}`);
+    const filePath = (workDirectory) ? path.join(workDirectory, filename) : path.join(runnerTempDirectory, filename);
+
+    console.log(`Saving content to file: ${filePath}`);
     fs.writeFileSync(filePath, content);
 } catch (error) {
     core.setFailed(error.message);
